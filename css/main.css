@@ -43,8 +43,6 @@ b{
 
 .about {
     font-size: 0.95rem;
-    font-weight: 400;
-    opacity: 0.6;
     text-align: center;
     margin: auto;
 }
@@ -91,7 +89,6 @@ b{
 
 .card-description {
     font-size: 0.85rem;
-    font-weight: 400;
     opacity: 0.6;
     margin: 10px 0 35px;
     text-align: left;
@@ -131,6 +128,10 @@ footer {
     .main-area {
         width: 50%;
         padding-bottom: 30px;
+    }
+
+    .card {
+        min-height: 200px;
     }
 
     .card-grid {
