@@ -1,0 +1,163 @@
+/* CSS for four card feature section */
+:root{
+    --body: hsl(0, 0%, 98%);
+    --card-1: hsl(180, 62%, 55%);
+    --card-2: hsl(0, 78%, 62%);
+    --card-3: hsl(34, 97%, 64%);
+    --card-4: hsl(212, 86%, 64%);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.5;
+    min-height: 100vh;
+    color:hsl(234, 12%, 34%);
+    display: grid;
+    place-items: center;
+    background: var(--body);
+    margin-top: 75px;
+}
+
+b{
+    font-weight: 600;
+}
+
+/* Main Area */
+.main-area {
+    margin: auto;
+    width: 90%;
+    padding-bottom: 30px;
+}
+
+.page-heading {
+    font-size: 1.6rem;
+    line-height: 1.2;
+    font-weight: 200;
+    text-align: center;
+}
+
+
+.about {
+    font-size: 0.95rem;
+    text-align: center;
+    margin: auto;
+}
+
+/* Card Section */
+.card {
+    width: 90%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    background: #fff;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 15px rgba(9, 103, 211, 0.2);
+}
+
+.card-1 {    
+    border-top: 4px solid var(--card-1);
+    margin: 20px auto;
+}
+
+.card-2 {    
+    border-top: 4px solid var(--card-2);
+    margin: 20px auto;
+}
+
+.card-3 {    
+    border-top: 4px solid var(--card-3);
+    margin: 20px auto;
+}
+
+.card-4 {    
+    border-top: 4px solid var(--card-4);
+    margin: 20px auto;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    margin: 0;
+    opacity: 0.95;
+    text-align: left;
+}
+
+.card-description {
+    font-size: 0.85rem;
+    opacity: 0.6;
+    margin: 10px 0 35px;
+    text-align: left;
+}
+
+.card-icon {
+    width: 20%;
+}
+
+.img-dir {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+/* Footer */
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+    text-decoration: none;
+}
+
+footer {
+    margin-top: 50px;
+}
+
+/* Desktop CSS*/
+@media(min-width: 700px) {
+    .page-heading {
+        font-size: 2.2rem;
+    }
+
+    .main-area {
+        width: 50%;
+        padding-bottom: 30px;
+    }
+
+    .card-grid {
+        margin: auto;
+        width: 90%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 0;
+    }
+
+    /* .card {
+        margin: 20px;
+    } */
+
+    .card-1 {
+        margin-right: 10px;
+    }
+    
+    .card-2 {
+        margin-bottom: 10px;
+    }
+
+    .card-4 {
+        margin-left: 10px;
+    }
+
+    .right-section,
+    .middle-section,
+    .left-section {
+        display: grid;
+        align-content: center;
+    }
+}
