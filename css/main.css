@@ -19,7 +19,7 @@ body {
     display: grid;
     place-items: center;
     background: var(--body);
-    margin-top: 75px;
+    margin-top: 50px;
 }
 
 b{
@@ -89,6 +89,7 @@ b{
 
 .card-description {
     font-size: 0.85rem;
+    font-weight: 400;
     opacity: 0.6;
     margin: 10px 0 35px;
     text-align: left;
